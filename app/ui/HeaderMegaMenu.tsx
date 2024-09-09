@@ -30,8 +30,6 @@ import { Image } from "@mantine/core";
 
 import Carousel2 from "@/app/component/swiperjs/Carousel2/Carousel2";
 
-import { MantineLogo } from "@mantinex/mantine-logo";
-
 import { useDisclosure } from "@mantine/hooks";
 import {
   IconNotification,
