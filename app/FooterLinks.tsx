@@ -4,7 +4,7 @@ import {
   IconBrandYoutube,
   IconBrandInstagram,
 } from "@tabler/icons-react";
-import { MantineLogo } from "@mantinex/mantine-logo";
+
 import classes from "./FooterLinks.module.css";
 
 const data = [
@@ -63,7 +63,6 @@ export function FooterLinks() {
     <footer className={classes.footer}>
       <Container className={classes.inner} p="0">
         <div className={classes.logo}>
-          <MantineLogo size={30} />
           <Text size="xs" c="dimmed" className={classes.description}>
             Build fully functional accessible web applications faster than ever
           </Text>
