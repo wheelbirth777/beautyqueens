@@ -1,0 +1,12 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardContainer > div {
+  margin: 5px;
+  padding: 10px;
+  font-size: 30px;
+  width: 400px;
+}

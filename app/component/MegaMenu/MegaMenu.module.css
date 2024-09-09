@@ -1,0 +1,11 @@
+.dropdown {
+  width: 100vw;
+}
+
+.dropMask::after {
+  content: url(../../../public/images/mask-bottom.png);
+  z-index: 2222222;
+  left: 0;
+  position: absolute;
+  opacity: 1;
+}

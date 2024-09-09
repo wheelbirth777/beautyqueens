@@ -1,0 +1,118 @@
+.header {
+  display: flex;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: rem(65px);
+  z-index: 99999999;
+  justify-content: center;
+}
+
+.header::after {
+  content: url(../../public/images/mask-bottom.png);
+  z-index: 2222;
+  top: 65px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  opacity: 1;
+}
+
+.masking {
+  display: flex;
+  position: fixed;
+  z-index: 122;
+}
+
+.masking::before {
+  display: block;
+
+  -webkit-mask-size: cover !important;
+  z-index: 2;
+
+  padding-bottom: 5.208%;
+  margin-bottom: -4px;
+  bottom: 100%;
+  background-color: #000;
+  left: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+  text-decoration: none;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-weight: 500;
+  font-size: var(--mantine-font-size-sm);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    height: rem(42px);
+    width: 100%;
+  }
+
+  @mixin hover {
+    background-color: light-dark(
+      var(--mantine-color-gray-0),
+      var(--mantine-color-dark-6)
+    );
+  }
+}
+
+.subLink {
+  width: 100%;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+  border-radius: var(--mantine-radius-md);
+
+  @mixin hover {
+    background-color: light-dark(
+      var(--mantine-color-gray-0),
+      var(--mantine-color-dark-7)
+    );
+  }
+}
+
+.dropdownFooter {
+  margin: calc(var(--mantine-spacing-md) * -1);
+  margin-top: var(--mantine-spacing-sm);
+  padding: var(--mantine-spacing-md) calc(var(--mantine-spacing-md) * 2);
+  padding-bottom: var(--mantine-spacing-xl);
+  border-top: rem(1px) solid
+    light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+  clear: both;
+}
+
+.dropdown {
+  background-color: rgba(30, 30, 48, 1);
+  width: 100%;
+  border-radius: 5px;
+  padding: 30px;
+
+  @media (min-width: 1600px) {
+    width: 80%;
+  }
+}
+
+
+ 
+
+ 
+
+.hovercardDropdown {
+  display: flex;
+  border: none;
+  justify-content: center;
+}
+
+.carousel {
+  width: 25%;
+}
+
+ 

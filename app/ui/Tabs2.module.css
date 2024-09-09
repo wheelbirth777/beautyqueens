@@ -1,0 +1,23 @@
+.test {
+  background-color: none;
+}
+
+.test:hover {
+  background-color: yellow;
+}
+
+.test:active::after {
+  background-color: none !important;
+}
+
+.test::selection {
+  background-color: black;
+}
+
+.test:hover::after {
+  content: "Hello";
+}
+
+.test:link {
+  background-color: black;
+}

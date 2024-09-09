@@ -1,0 +1,19 @@
+.leftContent {
+  width: "250px";
+}
+
+.masking {
+  position: relative;
+}
+
+.masking::before {
+  content: url(../../public/images/mask-bottom.png);
+  z-index: 2222222;
+
+  left: 0;
+  right: 0;
+
+  bottom: -100px;
+  position: absolute;
+  opacity: 1;
+}

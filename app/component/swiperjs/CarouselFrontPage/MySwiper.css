@@ -1,0 +1,63 @@
+/** Swiper styles **/
+
+.carouselFrontPage .swiper {
+  user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+
+  height: 100%;
+
+  padding: 16px 16px;
+}
+
+.carouselFrontPage .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.carouselFrontPage .swiper-slide-bg-image {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.carouselFrontPage .swiper-slide-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.carouselFrontPage .swiper-slide-91ee {
+  border-radius: 10px;
+  --swiper-material-slide-border-radius: 10px;
+}
+.carouselFrontPage .swiper-slide-bg-image-c61b {
+  object-fit: cover;
+  border-radius: inherit;
+}
+.carouselFrontPage .swiper-slide-content-609f {
+  padding: 32px 32px;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.carouselFrontPage .swiper-slide-text-bee6 {
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: bold;
+}

@@ -1,0 +1,49 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+p.submenu {
+  color: whitesmoke;
+  line-height: 1;
+  font-size: 13px;
+  text-align: left;
+}
+
+h4 {
+  font-family: cursive;
+}
+
+h3 {
+  font-family: cursive;
+}
+
+:root {
+  background-color: black;
+}
+
+a:hover {
+  background-color: transparent !important;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.tab {
+  outline: 2px solid whitesmoke;
+}
+
+a:hover {
+  color: blue !important;
+}
