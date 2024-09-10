@@ -46,10 +46,18 @@ const MegaMenu = () => {
       <Container w={"100vw"} bg={"black"} p={0} className={classes.dropMask}>
         <SimpleGrid h={100}>
           <Group justify="center" visibleFrom="xs">
-            <Link href="/">Home</Link>
+            <Link href="/">
+              <Text c={"white"}>Home</Text>
+            </Link>
 
-            <Link href="/battle">Battle</Link>
-            <Link href="/winners">Winners Page</Link>
+            <Link href="/battle">
+              {" "}
+              <Text c={"white"}>Battle</Text>
+            </Link>
+            <Link href="/winners">
+              {" "}
+              <Text c={"white"}>Winners Page</Text>
+            </Link>
 
             <HoverCard width="55vw" shadow="md">
               <HoverCard.Target>
@@ -68,7 +76,9 @@ const MegaMenu = () => {
                     <Grid.Col span={4}>
                       <Space h="md" />
                       <Link href="/models/latina">
-                        <Title order={4}>Latina BQ </Title>
+                        <Title c={"white"} order={4}>
+                          Latina BQ{" "}
+                        </Title>
                       </Link>
                       <Space h="md" />
                       <Link href="/models/lais-de-leon">
@@ -95,7 +105,9 @@ const MegaMenu = () => {
                     <Grid.Col span={4}>
                       <Space h="md" />
                       <Link href="/models/asia">
-                        <Title order={4}>Asia BQ </Title>
+                        <Title order={4} c={"white"}>
+                          Asia BQ{" "}
+                        </Title>
                       </Link>
                       <Space h="md" />
                       <Link href="/models/ariana-varela">
@@ -112,7 +124,9 @@ const MegaMenu = () => {
                     <Grid.Col span={4}>
                       <Space h="md" />
                       <Link href="/models/european">
-                        <Title order={5}>European BQ </Title>
+                        <Title order={4} c={"white"}>
+                          European BQ{" "}
+                        </Title>
                       </Link>
                       <Space h="md" />
                       <Link href="/models/marketa-janska">
@@ -130,7 +144,9 @@ const MegaMenu = () => {
                     <Grid.Col span={4}>
                       <Space h="md" />
                       <Link href="/models/american">
-                        <Title order={4}>American BQ </Title>
+                        <Title order={4} c={"white"}>
+                          American BQ{" "}
+                        </Title>
                       </Link>
                       <Space h="md" />
                       <Link href="/models/kathryn-stone">
@@ -141,7 +157,9 @@ const MegaMenu = () => {
                       {" "}
                       <Space h="md" />
                       <Link href="/models/exotic">
-                        <Title order={4}>Exotic BQ </Title>
+                        <Title order={4} c={"white"}>
+                          Exotic BQ{" "}
+                        </Title>
                       </Link>
                       <Space h="md" />
                       <Link href="/models/alicia-caldwell">
@@ -157,8 +175,13 @@ const MegaMenu = () => {
               </HoverCard.Dropdown>
             </HoverCard>
 
-            <Link href="/pageants">Beauty Pageants</Link>
-            <Link href="/contactus">Contact Us</Link>
+            <Link href="/pageants">
+              {" "}
+              <Text c={"white"}>Beauty Pageants</Text>
+            </Link>
+            <Link href="/contactus">
+              <Text c={"white"}>Contact Us</Text>
+            </Link>
           </Group>
         </SimpleGrid>
       </Container>
