@@ -62,7 +62,7 @@ const Page = () => {
         </SimpleGrid>
 
         <SimpleGrid cols={1} h={450} bg={"black"}>
-          <Carousel2 />
+          <Carousel2 slidesPerView={5} />
         </SimpleGrid>
       </Container>
 
