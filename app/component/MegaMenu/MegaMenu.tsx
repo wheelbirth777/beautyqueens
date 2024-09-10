@@ -10,6 +10,7 @@ import {
   Container,
   Divider,
   Drawer,
+  Flex,
   Grid,
   Group,
   HoverCard,
@@ -32,6 +33,8 @@ import { useDisclosure } from "@mantine/hooks";
 import { IconChevronDown } from "@tabler/icons-react";
 import CarouselFrontPage from "../swiperjs/CarouselFrontPage/CarouselFrontPage";
 import SliderImage from "../SliderImage";
+import Image from "next/image";
+import { SiImprovmx } from "react-icons/si";
 
 const MegaMenu = () => {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
@@ -43,157 +46,177 @@ const MegaMenu = () => {
     useDisclosure(false);
   return (
     <>
-      <Container w={"100vw"} bg={"black"} p={0} className={classes.dropMask}>
-        <SimpleGrid h={100}>
-          <Group justify="center" visibleFrom="xs">
+      <Container
+        fluid
+        w={"100vw"}
+        bg={"black"}
+        p={0}
+        className={classes.dropMask}
+      >
+        <Flex justify="center" wrap="nowrap" pt={15}>
+          <div style={{ width: "20%" }}>
+            <Image src="/images/logo.png" alt="logo" width={165} height={70} />
+          </div>
+
+          <SimpleGrid h={75} w={"60%"}>
+            <Group justify="center" visibleFrom="xs">
+              <Link href="/">
+                <Text c={"white"} fw={600}>
+                  Home
+                </Text>
+              </Link>
+
+              <Link href="/battle">
+                {" "}
+                <Text c={"white"} fw={600}>
+                  Battle
+                </Text>
+              </Link>
+              <Link href="/winners">
+                {" "}
+                <Text c={"white"} fw={600}>
+                  Winners Page
+                </Text>
+              </Link>
+
+              <HoverCard width="55vw" shadow="md">
+                <HoverCard.Target>
+                  <Button bg={"transparent"}>
+                    <Text fw={600}>Beauty Queens</Text>
+                  </Button>
+                </HoverCard.Target>
+
+                <HoverCard.Dropdown>
+                  <SimpleGrid cols={1} h={300}>
+                    <SliderImage />
+                  </SimpleGrid>
+
+                  <Divider my="sm" />
+
+                  <Container size={"lg"}>
+                    <Grid columns={20}>
+                      <Grid.Col span={4}>
+                        <Space h="md" />
+                        <Link href="/models/latina">
+                          <Title c={"white"} order={4}>
+                            Latina BQ{" "}
+                          </Title>
+                        </Link>
+                        <Space h="md" />
+                        <Link href="/models/lais-de-leon">
+                          <Text c="dimmed">Lais De Leon</Text>
+                        </Link>
+                        <Link href="/models/giselle-capdevila">
+                          <Text c="dimmed">Giselle Capdevila</Text>
+                        </Link>
+                        <Link href="/models/erica-vanlee">
+                          <Text c="dimmed">Erica Vanlee</Text>
+                        </Link>
+                        <Link href="/models/andrea-prias">
+                          <Text c="dimmed">Andrea Prias</Text>
+                        </Link>
+                        <Link href="/models/lilian-aguilar">
+                          <Text c="dimmed">Lilian</Text>
+                        </Link>
+                        <Link href="/models/veronica">
+                          <Text c="dimmed">Veronica</Text>
+                        </Link>
+                        <Space h="md" />
+                      </Grid.Col>
+
+                      <Grid.Col span={4}>
+                        <Space h="md" />
+                        <Link href="/models/asia">
+                          <Title order={4} c={"white"}>
+                            Asia BQ{" "}
+                          </Title>
+                        </Link>
+                        <Space h="md" />
+                        <Link href="/models/ariana-varela">
+                          <Text c="dimmed">Ariana Varela</Text>
+                        </Link>
+                        <Link href="/models/snoe-blac">
+                          <Text c="dimmed">Snoe Blac</Text>
+                        </Link>
+                        <Link href="/models/gina-deziree">
+                          <Text c="dimmed">Gina Deziree</Text>
+                        </Link>
+                        <Space h="md" />
+                      </Grid.Col>
+                      <Grid.Col span={4}>
+                        <Space h="md" />
+                        <Link href="/models/european">
+                          <Title order={4} c={"white"}>
+                            European BQ{" "}
+                          </Title>
+                        </Link>
+                        <Space h="md" />
+                        <Link href="/models/marketa-janska">
+                          <Text c="dimmed">Marketa Janska</Text>
+                        </Link>
+                        <Link href="/models/nina-kaczorowski">
+                          <Text c="dimmed">Nina Kaczorowski</Text>
+                        </Link>
+                        <Link href="/models/olga">
+                          <Text c="dimmed">Olga</Text>
+                        </Link>
+                        <Space h="md" />
+                      </Grid.Col>
+
+                      <Grid.Col span={4}>
+                        <Space h="md" />
+                        <Link href="/models/american">
+                          <Title order={4} c={"white"}>
+                            American BQ{" "}
+                          </Title>
+                        </Link>
+                        <Space h="md" />
+                        <Link href="/models/kathryn-stone">
+                          <Text c="dimmed">Kathryn Stone</Text>
+                        </Link>
+                      </Grid.Col>
+                      <Grid.Col span={4}>
+                        <Space h="md" />
+                        <Link href="/models/exotic">
+                          <Title order={4} c={"white"}>
+                            Exotic BQ{" "}
+                          </Title>
+                        </Link>
+                        <Space h="md" />
+                        <Link href="/models/alicia-caldwell">
+                          <Text c="dimmed">Alicia Caldwell</Text>
+                        </Link>
+                        <Link href="/models/elisa">
+                          <Text c="dimmed">Elisa</Text>
+                        </Link>
+                        <Space h="md" />
+                      </Grid.Col>
+                    </Grid>
+                  </Container>
+                </HoverCard.Dropdown>
+              </HoverCard>
+
+              <Link href="/pageants">
+                <Text c={"white"} fw={600}>
+                  Beauty Pageants
+                </Text>
+              </Link>
+              <Link href="/contactus">
+                <Text c={"white"} fw={600}>
+                  Contact Us
+                </Text>
+              </Link>
+            </Group>
+          </SimpleGrid>
+
+          <Flex w={"20%"} justify={"end"} align={"center"} pr={100}>
             <Link href="/">
               <Text c={"white"} fw={600}>
-                Home
+                Login
               </Text>
             </Link>
-
-            <Link href="/battle">
-              {" "}
-              <Text c={"white"} fw={600}>
-                Battle
-              </Text>
-            </Link>
-            <Link href="/winners">
-              {" "}
-              <Text c={"white"} fw={600}>
-                Winners Page
-              </Text>
-            </Link>
-
-            <HoverCard width="55vw" shadow="md">
-              <HoverCard.Target>
-                <Button bg={"transparent"}>
-                  <Text fw={600}>Beauty Queens</Text>
-                </Button>
-              </HoverCard.Target>
-
-              <HoverCard.Dropdown>
-                <SimpleGrid cols={1} h={300}>
-                  <SliderImage />
-                </SimpleGrid>
-
-                <Divider my="sm" />
-
-                <Container size={"lg"}>
-                  <Grid columns={20}>
-                    <Grid.Col span={4}>
-                      <Space h="md" />
-                      <Link href="/models/latina">
-                        <Title c={"white"} order={4}>
-                          Latina BQ{" "}
-                        </Title>
-                      </Link>
-                      <Space h="md" />
-                      <Link href="/models/lais-de-leon">
-                        <Text c="dimmed">Lais De Leon</Text>
-                      </Link>
-                      <Link href="/models/giselle-capdevila">
-                        <Text c="dimmed">Giselle Capdevila</Text>
-                      </Link>
-                      <Link href="/models/erica-vanlee">
-                        <Text c="dimmed">Erica Vanlee</Text>
-                      </Link>
-                      <Link href="/models/andrea-prias">
-                        <Text c="dimmed">Andrea Prias</Text>
-                      </Link>
-                      <Link href="/models/lilian-aguilar">
-                        <Text c="dimmed">Lilian</Text>
-                      </Link>
-                      <Link href="/models/veronica">
-                        <Text c="dimmed">Veronica</Text>
-                      </Link>
-                      <Space h="md" />
-                    </Grid.Col>
-
-                    <Grid.Col span={4}>
-                      <Space h="md" />
-                      <Link href="/models/asia">
-                        <Title order={4} c={"white"}>
-                          Asia BQ{" "}
-                        </Title>
-                      </Link>
-                      <Space h="md" />
-                      <Link href="/models/ariana-varela">
-                        <Text c="dimmed">Ariana Varela</Text>
-                      </Link>
-                      <Link href="/models/snoe-blac">
-                        <Text c="dimmed">Snoe Blac</Text>
-                      </Link>
-                      <Link href="/models/gina-deziree">
-                        <Text c="dimmed">Gina Deziree</Text>
-                      </Link>
-                      <Space h="md" />
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                      <Space h="md" />
-                      <Link href="/models/european">
-                        <Title order={4} c={"white"}>
-                          European BQ{" "}
-                        </Title>
-                      </Link>
-                      <Space h="md" />
-                      <Link href="/models/marketa-janska">
-                        <Text c="dimmed">Marketa Janska</Text>
-                      </Link>
-                      <Link href="/models/nina-kaczorowski">
-                        <Text c="dimmed">Nina Kaczorowski</Text>
-                      </Link>
-                      <Link href="/models/olga">
-                        <Text c="dimmed">Olga</Text>
-                      </Link>
-                      <Space h="md" />
-                    </Grid.Col>
-
-                    <Grid.Col span={4}>
-                      <Space h="md" />
-                      <Link href="/models/american">
-                        <Title order={4} c={"white"}>
-                          American BQ{" "}
-                        </Title>
-                      </Link>
-                      <Space h="md" />
-                      <Link href="/models/kathryn-stone">
-                        <Text c="dimmed">Kathryn Stone</Text>
-                      </Link>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                      <Space h="md" />
-                      <Link href="/models/exotic">
-                        <Title order={4} c={"white"}>
-                          Exotic BQ{" "}
-                        </Title>
-                      </Link>
-                      <Space h="md" />
-                      <Link href="/models/alicia-caldwell">
-                        <Text c="dimmed">Alicia Caldwell</Text>
-                      </Link>
-                      <Link href="/models/elisa">
-                        <Text c="dimmed">Elisa</Text>
-                      </Link>
-                      <Space h="md" />
-                    </Grid.Col>
-                  </Grid>
-                </Container>
-              </HoverCard.Dropdown>
-            </HoverCard>
-
-            <Link href="/pageants">
-              <Text c={"white"} fw={600}>
-                Beauty Pageants
-              </Text>
-            </Link>
-            <Link href="/contactus">
-              <Text c={"white"} fw={600}>
-                Contact Us
-              </Text>
-            </Link>
-          </Group>
-        </SimpleGrid>
+          </Flex>
+        </Flex>
       </Container>
 
       <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
