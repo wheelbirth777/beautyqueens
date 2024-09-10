@@ -3,6 +3,5 @@ node_modules/
 build/
 .DS_Store
 Thumbs.db
-# Next.js build output
 .next/
 .env

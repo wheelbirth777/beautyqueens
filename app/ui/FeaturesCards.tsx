@@ -19,6 +19,8 @@ import {
 import { IconGauge, IconUser, IconCookie } from "@tabler/icons-react";
 import classes from "./FeaturesCards.module.css";
 import { Image } from "@mantine/core";
+import { Tooltip, Button, em } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 
 const mockdata = [
   {
@@ -71,13 +73,14 @@ export function FeaturesCards() {
     </Card>
   ));
 
+  const isMobile = useMediaQuery(`(max-width: ${em(750)})`);
   return (
     <>
       <Container className={classes.backg} fluid p="0">
         <BackgroundImage src="../images/bqbackground7.webp">
           <Group justify="center"></Group>
 
-          <Space h="70vh" />
+          {isMobile ? <Space h="lg" /> : <Space h="70vh" />}
 
           <Flex
             mih={50}

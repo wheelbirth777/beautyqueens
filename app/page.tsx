@@ -32,16 +32,6 @@ const Page = async () => {
   return (
     <div>
       <HomePage models={models} />
-      {models.map((model) => (
-        <div key={model.slug}>
-          <Link href={`/model/${model.slug}`}>
-            <Button>{model.name}</Button>
-          </Link>
-
-          <Text>{model.featured_image}</Text>
-          <Space h="xl" />
-        </div>
-      ))}
     </div>
   );
 };

@@ -7,18 +7,17 @@ import "swiper/css";
 import "swiper/css/a11y";
 import "./effect-material.css";
 import "./MySwiper.css";
-import { Image } from "@mantine/core";
+import { Image, Text } from "@mantine/core";
 import Link from "next/link.js";
 
-export default function Carousel2() {
+export default function Carousel2(props) {
   const swiperParameters = {
     modules: [A11y, Autoplay, Scrollbar, EffectMaterial],
-    slidesPerView: 4,
-    spaceBetween: 16,
+    slidesPerView: props.slidesPerView,
+    spaceBetween: 10,
     loop: true,
     effect: "material",
     autoplay: { enabled: true },
-
     lazy: { enabled: true },
   };
   return (
@@ -30,8 +29,8 @@ export default function Carousel2() {
               <Image
                 className="swiper-slide-bg-image swiper-slide-bg-image-c61b"
                 data-swiper-material-scale="1.25"
-                src="../models/images/andrea-prias/featured_image.jpg"
-                alt="MegaMenu"
+                src="../models/images/andrea-prias/p1.jpg"
+                alt="Andrea"
               />
 
               <div className="swiper-slide-content swiper-material-animate-opacity swiper-slide-content-609f">
@@ -49,8 +48,8 @@ export default function Carousel2() {
               <Image
                 className="swiper-slide-bg-image swiper-slide-bg-image-c61b"
                 data-swiper-material-scale="1.25"
-                src="../models/images/kathryn-stone/featured_image.jpg"
-                alt="MegaMenu"
+                src="../models/images/kathryn-stone/p1.jpg"
+                alt="Kathryn"
               />
 
               <div className="swiper-slide-content swiper-material-animate-opacity swiper-slide-content-609f">
@@ -69,7 +68,7 @@ export default function Carousel2() {
                 className="swiper-slide-bg-image swiper-slide-bg-image-c61b"
                 data-swiper-material-scale="1.25"
                 src="../models/images/ariana-varela/featured_image.jpg"
-                alt="MegaMenu"
+                alt="Ariana"
               />
 
               <div className="swiper-slide-content swiper-material-animate-opacity swiper-slide-content-609f">
@@ -88,7 +87,7 @@ export default function Carousel2() {
                 className="swiper-slide-bg-image swiper-slide-bg-image-c61b"
                 data-swiper-material-scale="1.25"
                 src="../models/images/giselle-capdevila/featured_image.jpg"
-                alt="MegaMenu"
+                alt="Giselle"
               />
 
               <div className="swiper-slide-content swiper-material-animate-opacity swiper-slide-content-609f">
@@ -107,7 +106,7 @@ export default function Carousel2() {
                 className="swiper-slide-bg-image swiper-slide-bg-image-c61b"
                 data-swiper-material-scale="1.25"
                 src="../models/images/lais-de-leon/featured_image.jpg"
-                alt="MegaMenu"
+                alt="Lais De Leon"
               />
 
               <div className="swiper-slide-content swiper-material-animate-opacity swiper-slide-content-609f">
@@ -125,8 +124,8 @@ export default function Carousel2() {
               <Image
                 className="swiper-slide-bg-image swiper-slide-bg-image-c61b"
                 data-swiper-material-scale="1.25"
-                src="../models/images/vanda-dita-gallo/featured_image.jpg"
-                alt="MegaMenu"
+                src="../models/images/vanda-dita-gallo/p5.jpg"
+                alt="Vanda Dita Gallo"
               />
 
               <div className="swiper-slide-content swiper-material-animate-opacity swiper-slide-content-609f">
@@ -144,13 +143,32 @@ export default function Carousel2() {
               <Image
                 className="swiper-slide-bg-image swiper-slide-bg-image-c61b"
                 data-swiper-material-scale="1.25"
-                src="../models/images/vanda-dita-gallo/featured_image.jpg"
-                alt="MegaMenu"
+                src="../models/images/marketa-janska/featured_image.jpg"
+                alt="Marketa Janska"
               />
 
               <div className="swiper-slide-content swiper-material-animate-opacity swiper-slide-content-609f">
                 <div className="swiper-slide-text swiper-slide-text-bee6">
-                  Vanda
+                  Marketa
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide className="swiper-slide-91ee">
+          <div class="swiper-material-wrapper">
+            <div class="swiper-material-content">
+              <Image
+                className="swiper-slide-bg-image swiper-slide-bg-image-c61b"
+                data-swiper-material-scale="1.25"
+                src="../models/images/lilian-aguilar/p4.jpg"
+                alt="Marketa Janska"
+              />
+
+              <div className="swiper-slide-content swiper-material-animate-opacity swiper-slide-content-609f">
+                <div className="swiper-slide-text swiper-slide-text-bee6">
+                  Lilian
                 </div>
               </div>
             </div>

@@ -231,8 +231,16 @@ const HomePage = ({ models }: ModelListProps) => {
       </div>
 
       <div className={classes.mask}>
-        <SimpleGrid cols={1} h={450}>
-          <Carousel2 />
+        <SimpleGrid className="mantine-hidden-from-sm" cols={1} h={450}>
+          <Carousel2 slidesPerView={1} />
+        </SimpleGrid>
+
+        <SimpleGrid className="mantine-hidden-from-lg" cols={1} h={450}>
+          <Carousel2 slidesPerView={4} />
+        </SimpleGrid>
+
+        <SimpleGrid className="mantine-visible-from-lg" cols={1} h={450}>
+          <Carousel2 slidesPerView={6} />
         </SimpleGrid>
       </div>
 
