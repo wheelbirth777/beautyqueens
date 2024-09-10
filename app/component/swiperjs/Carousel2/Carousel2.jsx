@@ -174,6 +174,24 @@ export default function Carousel2(props) {
             </div>
           </div>
         </SwiperSlide>
+        <SwiperSlide className="swiper-slide-91ee">
+          <div class="swiper-material-wrapper">
+            <div class="swiper-material-content">
+              <Image
+                className="swiper-slide-bg-image swiper-slide-bg-image-c61b"
+                data-swiper-material-scale="1.25"
+                src="../models/images/sally/p1.jpg"
+                alt="Marketa Janska"
+              />
+
+              <div className="swiper-slide-content swiper-material-animate-opacity swiper-slide-content-609f">
+                <div className="swiper-slide-text swiper-slide-text-bee6">
+                  Sally
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </>
   );

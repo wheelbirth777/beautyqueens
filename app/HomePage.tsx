@@ -37,6 +37,12 @@ import Tabs2 from "./ui/Tabs2";
 import Carousel2 from "./component/swiperjs/Carousel2/Carousel2";
 import Carousel from "./component/swiperjs/Carousel/Carousel";
 
+import { Inter, Cormorant, Allison } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
+const cormorant = Cormorant({ subsets: ["latin"] });
+const allison = Allison({ weight: "400", subsets: ["latin"] });
+
 export interface Model {
   name: string;
   slug: string;
@@ -203,20 +209,16 @@ const HomePage = ({ models }: ModelListProps) => {
           />
           <Space h="sm" />
           <FadeInWhenVisible>
-            <Title size="5rem">Beauty Queens</Title>
+            <Title size={"5rem"} className={cormorant.className}>
+              Beauty Queens
+            </Title>
 
             <Space h="xs" />
-            <Title
-              c={"dimmed"}
-              size="3
-            rem"
-            >
+            <Title size="5rem" className={allison.className}>
               International
             </Title>
           </FadeInWhenVisible>
-          <Space h="xl" />
 
-          <Space h="xl" />
           <Space h="xl" />
           <Space h="xl" />
           <FadeInWhenVisible>

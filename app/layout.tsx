@@ -56,7 +56,7 @@ export default function RootLayout({
         <ColorSchemeScript defaultColorScheme="dark" />
         <MantineProvider defaultColorScheme="dark" theme={theme}>
           <div className={classes.masking}>
-          <MegaMenu />
+            <MegaMenu />
           </div>
 
           {children}
