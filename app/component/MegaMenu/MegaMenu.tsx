@@ -47,21 +47,29 @@ const MegaMenu = () => {
         <SimpleGrid h={100}>
           <Group justify="center" visibleFrom="xs">
             <Link href="/">
-              <Text c={"white"}>Home</Text>
+              <Text c={"white"} fw={600}>
+                Home
+              </Text>
             </Link>
 
             <Link href="/battle">
               {" "}
-              <Text c={"white"}>Battle</Text>
+              <Text c={"white"} fw={600}>
+                Battle
+              </Text>
             </Link>
             <Link href="/winners">
               {" "}
-              <Text c={"white"}>Winners Page</Text>
+              <Text c={"white"} fw={600}>
+                Winners Page
+              </Text>
             </Link>
 
             <HoverCard width="55vw" shadow="md">
               <HoverCard.Target>
-                <Button>Beauty Queens</Button>
+                <Button bg={"transparent"}>
+                  <Text fw={600}>Beauty Queens</Text>
+                </Button>
               </HoverCard.Target>
 
               <HoverCard.Dropdown>
@@ -154,7 +162,6 @@ const MegaMenu = () => {
                       </Link>
                     </Grid.Col>
                     <Grid.Col span={4}>
-                      {" "}
                       <Space h="md" />
                       <Link href="/models/exotic">
                         <Title order={4} c={"white"}>
@@ -176,11 +183,14 @@ const MegaMenu = () => {
             </HoverCard>
 
             <Link href="/pageants">
-              {" "}
-              <Text c={"white"}>Beauty Pageants</Text>
+              <Text c={"white"} fw={600}>
+                Beauty Pageants
+              </Text>
             </Link>
             <Link href="/contactus">
-              <Text c={"white"}>Contact Us</Text>
+              <Text c={"white"} fw={600}>
+                Contact Us
+              </Text>
             </Link>
           </Group>
         </SimpleGrid>
