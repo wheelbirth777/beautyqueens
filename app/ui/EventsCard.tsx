@@ -27,7 +27,7 @@ const mockdata = [
   {
     image: "../images/news.webp",
     title: "News",
-    url: "http://localhost:3000/news/doralmiami",
+    url: "https://www.beautyqueentv.com/news/doralmiami",
     description:
       "The 63rd Annual MISS UNIVERSE® Pageant To Be Held In Doral-Miami At Florida International University January 25 (8-11 P.M. ET) On NBC",
     icon: IconGauge,
@@ -50,7 +50,7 @@ const mockdata = [
   {
     image: "../images/event.png",
     title: "Recent Events",
-    url: "http://localhost:3000/events",
+    url: "https://www.beautyqueentv.com/events",
     description: "Bahamas & Las Vegas Events",
     icon: IconUser,
   },
