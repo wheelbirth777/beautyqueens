@@ -55,10 +55,10 @@ const MegaMenu = () => {
       >
         <Flex justify="center" wrap="nowrap" pt={15}>
           <div style={{ width: "20%" }}>
-            <Image src="/images/logo.png" alt="logo" width={165} height={70} />
+            <Image src="/images/logo.png" alt="logo" width={135} height={70} />
           </div>
 
-          <SimpleGrid h={75} w={"60%"}>
+          <SimpleGrid h={75} w={"60%"} visibleFrom="sm">
             <Group justify="center" visibleFrom="xs">
               <Link href="/">
                 <Text c={"white"} fw={600}>
@@ -209,7 +209,13 @@ const MegaMenu = () => {
             </Group>
           </SimpleGrid>
 
-          <Flex w={"20%"} justify={"end"} align={"center"} pr={100}>
+          <Flex
+            w={"20%"}
+            justify={"end"}
+            align={"center"}
+            pr={100}
+            visibleFrom="sm"
+          >
             <Link href="/">
               <Text c={"white"} fw={600}>
                 Login
@@ -219,7 +225,15 @@ const MegaMenu = () => {
         </Flex>
       </Container>
 
-      <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
+      <Flex align="center" mr={25}>
+        <Burger
+          size={"lg"}
+          opened={drawerOpened}
+          onClick={toggleDrawer}
+          hiddenFrom="sm"
+        />
+      </Flex>
+
       <Drawer
         withCloseButton={false}
         opened={drawerOpened}

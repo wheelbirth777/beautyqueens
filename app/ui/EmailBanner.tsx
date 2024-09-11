@@ -10,6 +10,7 @@ import {
   BackgroundImage,
   Group,
   Space,
+  Flex,
 } from "@mantine/core";
 import image from "./image.svg";
 import classes from "./EmailBanner.module.css";
@@ -29,29 +30,30 @@ interface ModelProps {
 
 export function EmailBanner({ modelInfo }: ModelProps) {
   const model = modelInfo;
-  console.log(model);
+
   return (
-    <BackgroundImage src={model.image} radius="md" p={"75px"}>
+    <BackgroundImage
+      src={model.image}
+      radius="md"
+      pr={{ xs: 30, sm: 30, md: 100, lg: 300, xl: 400 }}
+      pl={30}
+      pt={100}
+      pb={30}
+    >
       <div className={classes.wrapper}>
-        <div className={classes.body}>
+        <Flex direction="column">
           <Title>{model.name}</Title>
 
-          <Text fw={500} fz="lg" mb={5}>
+          <Text fw={500} fz="lg">
             {model.title}
           </Text>
           <Space h="md" />
-          <Text fz="sm" w="75%">
-            {model.description1}
-          </Text>
+          <Text fz="sm">{model.description1}</Text>
           <Space h="md" />
-          <Text fz="sm" w="75%">
-            {model.description2}
-          </Text>
+          <Text fz="sm">{model.description2}</Text>
           <Space h="md" />
-          <Text fz="sm" w="75%">
-            {model.description3}
-          </Text>
-        </div>
+          <Text fz="sm">{model.description3}</Text>
+        </Flex>
       </div>
     </BackgroundImage>
   );
