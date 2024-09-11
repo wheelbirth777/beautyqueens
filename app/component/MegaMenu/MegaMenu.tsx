@@ -35,6 +35,7 @@ import CarouselFrontPage from "../swiperjs/CarouselFrontPage/CarouselFrontPage";
 import SliderImage from "../SliderImage";
 import Image from "next/image";
 import { SiImprovmx } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const MegaMenu = () => {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
@@ -60,30 +61,40 @@ const MegaMenu = () => {
 
           <SimpleGrid h={75} w={"60%"} visibleFrom="sm">
             <Group justify="center" visibleFrom="xs">
-              <Link href="/">
-                <Text c={"white"} fw={600}>
-                  Home
-                </Text>
-              </Link>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.5 }}>
+                <Link href="/">
+                  <Text c={"white"} fw={400}>
+                    Home
+                  </Text>
+                </Link>
+              </motion.div>
 
-              <Link href="/battle">
-                {" "}
-                <Text c={"white"} fw={600}>
-                  Battle
-                </Text>
-              </Link>
-              <Link href="/winners">
-                {" "}
-                <Text c={"white"} fw={600}>
-                  Winners Page
-                </Text>
-              </Link>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.5 }}>
+                <Link href="/battle">
+                  <Text c={"white"} fw={400}>
+                    Battle
+                  </Text>
+                </Link>
+              </motion.div>
+
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.5 }}>
+                <Link href="/winners">
+                  <Text c={"white"} fw={400}>
+                    Winners Page
+                  </Text>
+                </Link>
+              </motion.div>
 
               <HoverCard width="55vw" shadow="md">
                 <HoverCard.Target>
-                  <Button bg={"transparent"}>
-                    <Text fw={600}>Beauty Queens</Text>
-                  </Button>
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 1.5 }}
+                  >
+                    <Button bg={"transparent"}>
+                      <Text fw={400}>Beauty Queens</Text>
+                    </Button>
+                  </motion.div>
                 </HoverCard.Target>
 
                 <HoverCard.Dropdown>
@@ -196,16 +207,21 @@ const MegaMenu = () => {
                 </HoverCard.Dropdown>
               </HoverCard>
 
-              <Link href="/pageants">
-                <Text c={"white"} fw={600}>
-                  Beauty Pageants
-                </Text>
-              </Link>
-              <Link href="/contactus">
-                <Text c={"white"} fw={600}>
-                  Contact Us
-                </Text>
-              </Link>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.5 }}>
+                <Link href="/pageants">
+                  <Text c={"white"} fw={400}>
+                    Beauty Pageants
+                  </Text>
+                </Link>
+              </motion.div>
+
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.5 }}>
+                <Link href="/contactus">
+                  <Text c={"white"} fw={400}>
+                    Contact Us
+                  </Text>
+                </Link>
+              </motion.div>
             </Group>
           </SimpleGrid>
 
@@ -216,11 +232,13 @@ const MegaMenu = () => {
             pr={100}
             visibleFrom="sm"
           >
-            <Link href="/">
-              <Text c={"white"} fw={600}>
-                Login
-              </Text>
-            </Link>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.5 }}>
+              <Link href="/">
+                <Text c={"white"} fw={400}>
+                  Login
+                </Text>
+              </Link>
+            </motion.div>
           </Flex>
         </Flex>
       </Container>

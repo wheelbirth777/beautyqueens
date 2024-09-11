@@ -19,7 +19,6 @@ import { ArticleCardVertical } from "./ui/ArticleCardVertical";
 import { Image, Text } from "@mantine/core";
 import { HeroBullets } from "./ui/HeroBullets";
 import { EmailBanner } from "./ui/EmailBanner";
-import { FeaturesCards } from "./ui/FeaturesCards";
 import classes from "./page.module.css";
 import FadeInWhenVisible from "@/app/ui/FadeInWhenVisible";
 import React, { forwardRef, useEffect, useMemo, useState } from "react";
@@ -36,8 +35,10 @@ import TabNavigation from "./ui/Tabs";
 import Tabs2 from "./ui/Tabs2";
 import Carousel2 from "./component/swiperjs/Carousel2/Carousel2";
 import Carousel from "./component/swiperjs/Carousel/Carousel";
+import { arianaInfo, kathrynInfo, giselleInfo } from "@/app/ui/EventsCardData";
 
 import { Inter, Cormorant, Allison } from "next/font/google";
+import { EventsCard } from "./ui/EventsCard";
 
 const inter = Inter({ subsets: ["latin"] });
 const cormorant = Cormorant({ subsets: ["latin"] });
@@ -152,44 +153,6 @@ const HomePage = ({ models }: ModelListProps) => {
     }
   };
 
-  const giselleInfo = {
-    name: "Giselle Capdevila",
-    title: "Latina Beauty Queen 2012",
-    image: "../images/homepageImages/giselleFrontImage.webp",
-    description1:
-      "Giselle Capdevila has an amazing story. Born and raised in Cuba, Giselle's family miraculously escaped Cuba in a small manmade boat in 2005, arriving days later to the shores of the USA under political asylum. Giselle soon moved to Las Vegas where she graduated high school and then began modeling for Ed Hardy, True Religion and Sketchers.",
-    description2:
-      "Giselle Capdevila has an amazing story. Born and raised in Cuba, Giselle's family miraculously escaped Cuba in a small manmade boat in 200",
-
-    description3:
-      "Giselle Capdevila has an amazing story. Born and raised in Cuba, Giselle's family miraculously escaped Cuba in a small manmade boat in 200",
-  };
-
-  const arianaInfo = {
-    name: "Ariana Varela",
-    title: "Asia Beauty Queen 2012",
-    image: "../images/homepageImages/arianaFrontImage.webp",
-    description1:
-      "Ariana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were both Miss Monterey Park title holders and were in the Miss California U.S.A. Pageants, and Aunt Lisa Manibog went on to win the Miss Philippines U.S.A. and Miss Philippine International in Manila, which propelled her to the Miss International Pageant in Japan in 1983.",
-
-    description2:
-      " Ariana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were both Miss Monterey Park title holders and were in the Miss California U.S.A. Pageants, and Aunt Lisa Manibog went on to win the Miss Philippines U.S.A. and Miss Philippine International in Manila, which propelled her to the Miss International Pageant in Japan in 1983.",
-    description3: "",
-  };
-
-  const kathrynInfo = {
-    name: "Kathryn Stone",
-    title: "Asia Beauty Queen 2012",
-    image: "../images/kathryn.webp",
-    description1:
-      "Ariana's mAriana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were Ariana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were other, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were both Miss Monterey Park title holders and were in the Miss California U.S.A. Pageants, and Aunt Lisa Manibog went on to win the Miss Philippines U.S.A. and Miss Philippine International in Manila, which propelled her to the Miss International Pageant in Japan in 1983.",
-
-    description2:
-      " Ariana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were olders and were in the Miss California U.S.A. Pageants, and Aunt Lisa Manibog went on to win the Miss Philippines U.S.A. and Miss Philippine International in Manila, which propelled her to the Miss International Pageant in Japan in 1983.",
-    description3:
-      "ArianAriana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were aAriana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were 's mother, Ariana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were ",
-  };
-
   return (
     <div style={{ margin: "0", padding: "0" }}>
       <div className={`${styles.flexContainer} ${styles.rhombus}`}>
@@ -247,7 +210,7 @@ const HomePage = ({ models }: ModelListProps) => {
       </div>
 
       <div className={classes.mask}>
-        <FeaturesCards />
+        <EventsCard />
       </div>
 
       <Container fluid bg={"black"}>

@@ -17,43 +17,46 @@ import {
   rgba,
 } from "@mantine/core";
 import { IconGauge, IconUser, IconCookie } from "@tabler/icons-react";
-import classes from "./FeaturesCards.module.css";
+import classes from "./EventsCard.module.css";
 import { Image } from "@mantine/core";
 import { Tooltip, Button, em } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
+import Link from "next/link";
 
 const mockdata = [
   {
     image: "../images/news.webp",
     title: "News",
+    url: "http://localhost:3000/news/doralmiami",
     description:
-      "This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit",
+      "The 63rd Annual MISS UNIVERSE® Pageant To Be Held In Doral-Miami At Florida International University January 25 (8-11 P.M. ET) On NBC",
     icon: IconGauge,
   },
   {
     image: "../images/academy.webp",
-    title: "Privacy focused",
+    title: "Vegas Academy",
+    url: "http://localhost:3000/academy",
     description:
-      "People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma",
+      "Welcome my fellow Beauty Queens! I want to extend an invitation to come to Las Vegas and participate in our many Beauty Queen contests and TV shows... - Kathryn Stone",
     icon: IconUser,
   },
   {
     image: "../images/press.webp",
-    title: "No third parties",
-    description:
-      "They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves",
+    title: "Asia Beauty Queen 2011",
+    url: "http://localhost:3000/press",
+    description: "Battle Of The Beauty Queens - Worldwide TV Broadcast",
     icon: IconCookie,
   },
   {
-    image: "../images/academy.webp",
-    title: "Privacy focused",
-    description:
-      "People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma",
+    image: "../images/event.png",
+    title: "Recent Events",
+    url: "http://localhost:3000/events",
+    description: "Bahamas & Las Vegas Events",
     icon: IconUser,
   },
 ];
 
-export function FeaturesCards() {
+export function EventsCard() {
   const theme = useMantineTheme();
   const features = mockdata.map((feature) => (
     <Card
@@ -63,13 +66,24 @@ export function FeaturesCards() {
       className={classes.card}
       padding="xl"
     >
-      <Image src={feature.image} alt="test"></Image>
-      <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
-        {feature.title}
-      </Text>
-      <Text fz="sm" c="dimmed" mt="sm">
-        {feature.description}
-      </Text>
+      <Link href={feature.url}>
+        <Image src={feature.image} alt="test"></Image>
+      </Link>
+
+      <Link href={feature.url}>
+        <Text
+          fz="lg"
+          fw={500}
+          className={classes.cardTitle}
+          mt="md"
+          c={"white"}
+        >
+          {feature.title}
+        </Text>
+        <Text fz="sm" c="dimmed" mt="sm">
+          {feature.description}
+        </Text>
+      </Link>
     </Card>
   ));
 

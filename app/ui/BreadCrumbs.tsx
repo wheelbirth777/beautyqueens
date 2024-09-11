@@ -1,4 +1,11 @@
-import { Breadcrumbs, Anchor, Container, SimpleGrid } from "@mantine/core";
+import {
+  Breadcrumbs,
+  Anchor,
+  Container,
+  SimpleGrid,
+  Text,
+  Title,
+} from "@mantine/core";
 
 const items = [
   { title: "Home", href: "/" },

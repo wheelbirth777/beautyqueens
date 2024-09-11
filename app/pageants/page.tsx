@@ -18,7 +18,7 @@ import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import { FeaturesCards } from "../ui/FeaturesCards";
+
 import Carousel2 from "../component/swiperjs/Carousel2/Carousel2";
 import SliderImage from "../component/SliderImage";
 
