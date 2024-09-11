@@ -37,7 +37,7 @@ const mockdata = [
     title: "Vegas Academy",
     url: "http://localhost:3000/academy",
     description:
-      "Welcome my fellow Beauty Queens! I want to extend an invitation to come to Las Vegas and participate in our many Beauty Queen contests and TV shows... - Kathryn Stone",
+      "Welcome my fellow Beauty Queens!  I want to extend an invitation to come to Las Vegas and participate in our many Beauty Queen contests and TV shows... - Kathryn Stone",
     icon: IconUser,
   },
   {
