@@ -26,12 +26,12 @@ export const arianaInfo = {
 export const kathrynInfo = {
   name: "Kathryn Stone",
   title: "Asia Beauty Queen 2012",
-  image: "../images/kathryn.webp",
+  image: "",
   description1:
     "Ariana's mAriana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were Ariana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were other, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were both Miss Monterey Park title holders and were in the Miss California U.S.A. Pageants, and Aunt Lisa Manibog went on to win the Miss Philippines U.S.A. and Miss Philippine International in Manila, which propelled her to the Miss International Pageant in Japan in 1983.",
 
   description2:
     " Ariana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were olders and were in the Miss California U.S.A. Pageants, and Aunt Lisa Manibog went on to win the Miss Philippines U.S.A. and Miss Philippine International in Manila, which propelled her to the Miss International Pageant in Japan in 1983.",
   description3:
-    "ArianAriana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were aAriana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were 's mother, Ariana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were ",
+    "ArianAriana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were aAriana's mother, LArianAriana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were aAriana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were 's mother, Ariana's mother, Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were Lana Manibog Varela, and her aunt, Lisa Manibog Brennan, were ",
 };

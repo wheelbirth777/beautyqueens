@@ -67,7 +67,7 @@ export function EventsCard() {
       padding="xl"
     >
       <Link href={feature.url}>
-        <Image src={feature.image} alt="test"></Image>
+        <Image src={feature.image} alt="feature"></Image>
       </Link>
 
       <Link href={feature.url}>
@@ -91,10 +91,13 @@ export function EventsCard() {
   return (
     <>
       <Container className={classes.backg} fluid p="0">
-        <BackgroundImage src="../images/bqbackground7.webp">
+        <BackgroundImage
+          src="../images/bqbackground7.webp"
+          style={{ backgroundAttachment: "fixed" }}
+        >
           <Group justify="center"></Group>
 
-          {isMobile ? <Space h="lg" /> : <Space h="70vh" />}
+          <Space h="40vh" />
 
           <Flex
             mih={50}

@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import { ContactUs } from "./ui/ContactUs";
 import {
   Anchor,
+  BackgroundImage,
   Card,
   Center,
   Container,
@@ -213,11 +214,16 @@ const HomePage = ({ models }: ModelListProps) => {
         <EventsCard />
       </div>
 
-      <Container fluid bg={"black"}>
-        <Container size={"xl"}>
-          <EmailBanner modelInfo={kathrynInfo} />
-        </Container>
-        <Space h="xl" />
+      <Container fluid bg={"black"} h={"100vh"}>
+        <BackgroundImage
+          src="../images/kathryn.webp"
+          style={{ backgroundAttachment: "fixed" }}
+        >
+          <Container size={"xl"}>
+            <EmailBanner modelInfo={kathrynInfo} />
+          </Container>
+          <Space h="xl" />
+        </BackgroundImage>
       </Container>
 
       <Space h="xl" />

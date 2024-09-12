@@ -37,12 +37,17 @@ export function ContactUs() {
   return (
     <div className={classes.mask}>
       <Container fluid pt="100" pl="0" pr="0">
-        <BackgroundImage src="../images/bqbackground11.webp" pl="0">
+        <BackgroundImage
+          src="../images/bqbackground11.webp"
+          pl="0"
+          style={{ backgroundAttachment: "fixed" }}
+        >
           <Container
             fluid
             bg="rgba(0,0,0, 0.6)"
             p={{ base: "0", sm: "10" }}
             pb="0"
+            pt="200 "
           >
             <SimpleGrid
               p="xl"
