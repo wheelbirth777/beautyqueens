@@ -35,7 +35,7 @@ const mockdata = [
   {
     image: "../images/academy.webp",
     title: "Vegas Academy",
-    url: "http://localhost:3000/academy",
+    url: "https://www.beautyqueentv.com/academy",
     description:
       "Welcome my fellow Beauty Queens!  I want to extend an invitation to come to Las Vegas and participate in our many Beauty Queen contests and TV shows... - Kathryn Stone",
     icon: IconUser,
@@ -43,7 +43,7 @@ const mockdata = [
   {
     image: "../images/press.webp",
     title: "Asia Beauty Queen 2011",
-    url: "http://localhost:3000/press",
+    url: "https://www.beautyqueentv.com/press",
     description: "Battle Of The Beauty Queens - Worldwide TV Broadcast",
     icon: IconCookie,
   },
